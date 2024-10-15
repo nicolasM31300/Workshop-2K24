@@ -1,0 +1,137 @@
+/* Styles globaux pour la page Éducation */
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Couleur de fond de la page */
+    font-family: Arial, sans-serif; /* Police de caractère */
+    overflow: hidden; /* Désactive le scroll */
+}
+
+/* Conteneur iPhone avec coins arrondis */
+.iphone {
+    width: 375px; /* Largeur simulant un iPhone */
+    height: 667px; /* Hauteur simulant un iPhone */
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 40px; /* Coins arrondis */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Ombre */
+    position: relative;
+    border: 16px solid #000; /* Bordure */
+}
+
+/* Notch pour simuler l'écran */
+.notch {
+    width: 56%;
+    height: 30px;
+    background-color: #000; /* Couleur de la notch */
+    border-radius: 0 0 10px 10px; /* Coins arrondis en bas */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Écran de l'application */
+.screen {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0; /* Couleur de fond de l'écran */
+    padding: 20px 10px 10px 10px; /* Espacement */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Assure que tout reste dans l'écran */
+    align-items: center;
+    border-radius: 40px; /* Ajout de la bordure arrondie à l'écran */
+    overflow: hidden; /* Évite le débordement du contenu */
+}
+
+/* Titre de la page Éducation */
+.page-title {
+    font-size: 24px; /* Taille du titre */
+    color: #333; /* Couleur du titre */
+    text-align: center;
+    margin: 30px 0; /* Marge autour du titre */
+    margin-bottom:-150px;
+}
+
+/* Conteneur des jauges */
+.gauge-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; /* Prend l'espace restant */
+    justify-content: center; /* Centré verticalement */
+    margin-top:-60px;
+}
+
+/* Style des jauges */
+.gauge {
+    width: 75%; /* Largeur des jauges */
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff; /* Couleur de fond des jauges */
+    border-radius: 15px; /* Coins arrondis */
+    text-align: center; /* Centre le texte */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Barre de progression */
+.progress-bar {
+    width: 100%;
+    background-color: #ddd; /* Couleur de fond de la barre */
+    border-radius: 15px; /* Coins arrondis */
+    overflow: hidden; /* Masque le débordement */
+    height: 20px; /* Hauteur de la barre de progression */
+    margin: 10px 0; /* Marge autour de la barre */
+}
+
+/* État de la barre de progression */
+.progress {
+    height: 100%; /* Remplit la barre de progression */
+    border-radius: 15px 0 0 15px; /* Coins arrondis à gauche */
+}
+
+/* Liens sous forme de liste */
+.links {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding par défaut */
+    display: flex;
+    flex-direction: column; /* Colonne pour les liens */
+    align-items: center; /* Centre les liens */
+    margin-top: 20px; /* Marge en haut des liens */
+    margin-bottom:200px;
+}
+
+.link {
+    font-size: 16px; /* Taille de la police des liens */
+    color: #0066cc; /* Couleur des liens */
+    text-decoration: none; /* Pas de soulignement */
+    margin: 5px 0; /* Marge entre les liens */
+}
+
+.link:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Bouton Home */
+.home-button {
+    width: 60px; /* Taille ajustée pour le bouton */
+    height: 60px; /* Taille ajustée pour le bouton */
+    background-color: #000; /* Couleur du bouton */
+    border-radius: 50%; /* Forme ronde */
+    position: absolute; /* Positionnement absolu */
+    bottom: 10px; /* Positionnement en bas */
+    left: 50%; /* Centré horizontalement */
+    transform: translateX(-50%); /* Centrage */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Ombre */
+}
+
+.home-button img {
+    width: 30px; /* Taille ajustée pour l'icône d'accueil */
+    height: 30px; /* Taille ajustée pour l'icône d'accueil */
+}

@@ -1,0 +1,151 @@
+/* Styles globaux pour la mise en page */
+body, html {
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Désactive le scroll */
+    font-size: 10px;
+}
+
+.iphone {
+    width: 375px; /* Largeur simulant un iPhone */
+    height: 667px; /* Hauteur simulant un iPhone */
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden; /* Pas de scroll */
+    border: 16px solid #000;
+}
+
+.notch {
+    width: 56%;
+    height: 30px;
+    background-color: #000;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px 10px 10px 10px; /* Réduit l'espace en haut */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Assure que tout reste dans l'écran */
+    align-items: center;
+}
+
+/* Photo de profil augmentée de 200% */
+.profile-photo {
+    width: 45%; /* Augmentée à 45% de la largeur de l'écran */
+    max-width: 180px; /* Taille maximale ajustée */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Margine conservée pour le style */
+    margin-top:40px
+}
+
+/* Message de bienvenue */
+h3 {
+    color: #333;
+    margin: 0 0 2px 0;
+    text-align: center;
+    font-size: 14px; /* Réduction de la taille de la police */
+}
+
+/* Conteneur des jauges */
+.gauge-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; /* Prend l'espace restant */
+    justify-content: center; /* Centré verticalement */
+    margin-top: -25px; /* Distance réduite à 3px (environ 70% de 10px) */
+}
+
+/* Style des jauges */
+.gauge {
+    width: 75%; /* Largeur inchangée */
+    height: 40px; /* Augmentée pour plus d'espace */
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Barre de progression */
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 20px; /* Augmentée pour plus de visibilité */
+    margin: 10px 0;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.gauge h4 {
+    margin: 0;
+    font-size: 12px; /* Augmentée pour une meilleure lisibilité */
+}
+
+/* Boutons ronds en bas */
+.bottom-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    position: relative;
+    z-index: 5; /* Pour assurer que les boutons sont au-dessus des autres éléments */
+    margin-top: 0px; /* Remontée de 3 cm (30px) */
+    margin-bottom:50px
+}
+
+/* Ajustement de la taille des boutons */
+.round-button {
+    width: 60px; /* Légèrement agrandi */
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-button img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Bouton Home */
+.home-button {
+    width: 50px; /* Taille réduite pour s'adapter à l'écran */
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
