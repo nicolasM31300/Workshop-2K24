@@ -103,15 +103,14 @@ body, html {
     display: flex;
     flex-direction: column; /* Colonne pour les liens */
     align-items: center; /* Centre les liens */
-    margin-top: 20px; /* Marge en haut des liens */
-    margin-bottom:200px;
+    
 }
 
 .link {
     font-size: 16px; /* Taille de la police des liens */
-    color: #0066cc; /* Couleur des liens */
     text-decoration: none; /* Pas de soulignement */
-    margin: 5px 0; /* Marge entre les liens */
+    font-style:transparent;
+    
 }
 
 .link:hover {
@@ -134,4 +133,15 @@ body, html {
 .home-button img {
     width: 30px; /* Taille ajustée pour l'icône d'accueil */
     height: 30px; /* Taille ajustée pour l'icône d'accueil */
+}
+p{
+    margin-bottom: 500px;
+    font-size: 20px;
+}
+a{ 
+ 
+ position: absolute; /* Positionnement absolu */
+ bottom: 30px; /* Positionnement en bas */
+ left: 40%; /* Centré horizontalement */
+ font-style:transparent;
 }

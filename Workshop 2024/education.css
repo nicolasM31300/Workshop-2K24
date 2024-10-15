@@ -135,3 +135,4 @@ body, html {
     width: 30px; /* Taille ajustée pour l'icône d'accueil */
     height: 30px; /* Taille ajustée pour l'icône d'accueil */
 }
+a{font-style:transparent;}
