@@ -1,0 +1,23 @@
+-- Suppression des tables --
+
+
+DROP TABLE utilisateurs;
+
+
+
+
+
+-- Création des tables --
+
+
+CREATE TABLE utilisateurs
+(
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	nom VARCHAR(50),
+	prenom VARCHAR(50),
+	mail VARCHAR(50),
+	date_creation_compte DATE,
+	pseudo VARCHAR(50),
+	password VARCHAR(50),
+	level INT
+);
