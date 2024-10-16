@@ -73,7 +73,7 @@ h3 {
     align-items: center;
     flex-grow: 1; /* Prend l'espace restant */
     justify-content: center; /* Centré verticalement */
-    margin-top: -25px; /* Distance réduite à 3px (environ 70% de 10px) */
+    margin-top: 10px; /* Distance réduite à 3px (environ 70% de 10px) */
 }
 
 /* Style des jauges */
@@ -86,6 +86,7 @@ h3 {
     border-radius: 15px;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 /* Barre de progression */
@@ -137,18 +138,174 @@ h3 {
     height: 50px;
 }
 
-/* Bouton Home */
-.home-button {
-    width: 50px; /* Taille réduite pour s'adapter à l'écran */
-    height: 50px;
-    background-color: #000;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+/* Styles pour la page de connexion */
+h2 {
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
 }
-a{
-    font-style: transparent;
+
+.login-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #555;
+    align-self: flex-start;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 12px;
+    color: #333;
+    margin-top: 12px;
+    text-align: center;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Styles pour la page d'inscription */
+h2 {
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.signup-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #555;
+    align-self: flex-start;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 12px;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Message de succès */
+.success-message {
+    color: green;
+}
+
+/* Messages d'erreur */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+img {
+    margin-top: -20px;
+}
+
+.level-display {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
 }
