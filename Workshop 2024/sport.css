@@ -49,7 +49,7 @@ body, html {
     overflow: hidden; /* Évite le débordement du contenu */
 }
 
-/* Titre de la page Éducation */
+/* Titre de la page sport */
 .page-title {
     font-size: 24px; /* Taille du titre */
     color: #333; /* Couleur du titre */
@@ -66,7 +66,7 @@ body, html {
     align-items: center;
     flex-grow: 1; /* Prend l'espace restant */
     justify-content: center; /* Centré verticalement */
-    margin-top:-60px;
+    margin-top: 760px;
 }
 
 /* Style des jauges */
@@ -78,6 +78,7 @@ body, html {
     border-radius: 15px; /* Coins arrondis */
     text-align: center; /* Centre le texte */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-bottom: 400px;
 }
 
 /* Barre de progression */
@@ -103,14 +104,15 @@ body, html {
     display: flex;
     flex-direction: column; /* Colonne pour les liens */
     align-items: center; /* Centre les liens */
-    
+    margin-top: 20px; /* Marge en haut des liens */
+    margin-bottom:200px;
 }
 
 .link {
     font-size: 16px; /* Taille de la police des liens */
+    color: #0066cc; /* Couleur des liens */
     text-decoration: none; /* Pas de soulignement */
-    font-style:transparent;
-    
+    margin: 5px 0; /* Marge entre les liens */
 }
 
 .link:hover {
@@ -121,27 +123,25 @@ body, html {
 .home-button {
     width: 60px; /* Taille ajustée pour le bouton */
     height: 60px; /* Taille ajustée pour le bouton */
-    background-color: #000; /* Couleur du bouton */
+    background-color: #000; /* Couleur du bouton noir */
     border-radius: 50%; /* Forme ronde */
     position: absolute; /* Positionnement absolu */
-    bottom: 10px; /* Positionnement en bas */
+    bottom: 30px; /* Ajustez selon la hauteur souhaitée */
     left: 50%; /* Centré horizontalement */
-    transform: translateX(-50%); /* Centrage */
+    transform: translateX(-50%); /* Centrage horizontal */
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: center; /* Centre horizontalement l'image */
+    align-items: center; /* Centre verticalement l'image */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Ombre */
 }
 
 .home-button img {
     width: 30px; /* Taille ajustée pour l'icône d'accueil */
     height: 30px; /* Taille ajustée pour l'icône d'accueil */
+    
 }
-p{
-    margin-bottom: 500px;
-    font-size: 20px;
-}
-a{ 
- 
- position: absolute; /* Positionnement absolu */
- bottom: 30px; /* Positionnement en bas */
- left: 40%; /* Centré horizontalement */
- font-style:transparent;
+
+p {
+    text-align: center;
+    color: blue;
 }
