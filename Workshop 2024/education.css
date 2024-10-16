@@ -78,6 +78,7 @@ body, html {
     border-radius: 15px; /* Coins arrondis */
     text-align: center; /* Centre le texte */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-top: 180px;
 }
 
 /* Barre de progression */
@@ -107,32 +108,47 @@ body, html {
     margin-bottom:200px;
 }
 
-.link {
-    font-size: 16px; /* Taille de la police des liens */
-    color: #0066cc; /* Couleur des liens */
-    text-decoration: none; /* Pas de soulignement */
-    margin: 5px 0; /* Marge entre les liens */
-}
-
-.link:hover {
-    text-decoration: underline; /* Soulignement au survol */
-}
-
-/* Bouton Home */
 .home-button {
     width: 60px; /* Taille ajustée pour le bouton */
     height: 60px; /* Taille ajustée pour le bouton */
-    background-color: #000; /* Couleur du bouton */
+    background-color: #000; /* Couleur du bouton noir */
     border-radius: 50%; /* Forme ronde */
     position: absolute; /* Positionnement absolu */
-    bottom: 10px; /* Positionnement en bas */
+    bottom: 30px; /* Ajustez selon la hauteur souhaitée */
     left: 50%; /* Centré horizontalement */
-    transform: translateX(-50%); /* Centrage */
+    transform: translateX(-50%); /* Centrage horizontal */
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: center; /* Centre horizontalement l'image */
+    align-items: center; /* Centre verticalement l'image */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Ombre */
 }
 
 .home-button img {
     width: 30px; /* Taille ajustée pour l'icône d'accueil */
     height: 30px; /* Taille ajustée pour l'icône d'accueil */
+    
 }
-a{font-style:transparent;}
+
+/* Liens sous forme de boutons */
+.button {
+    display: inline-block;
+    padding: 15px 30px; /* Ajustez selon la taille souhaitée */
+    background-color: #0066cc; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    text-align: center;
+    text-decoration: none; /* Pas de soulignement */
+    border-radius: 25px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: background-color 0.3s ease; /* Transition pour effet au survol */
+    margin: 10px 0; /* Espacement entre les boutons */
+}
+
+.button:hover {
+    background-color: #005bb5; /* Couleur plus foncée au survol */
+}
+
+.button:active {
+    background-color: #004999; /* Couleur encore plus foncée lors du clic */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre réduite lors du clic */
+}
