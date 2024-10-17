@@ -9,6 +9,7 @@ session_start()
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sensibilisation</title>
     <link rel="stylesheet" href="sensibilisation.css">
+    <link rel="icon" type="image/png" href="modera.png">
 </head>
 <body>
     <div class="iphone">
